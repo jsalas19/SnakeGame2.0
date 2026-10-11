@@ -1,18 +1,42 @@
-## Getting Started
+# SnakeGame2.0
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple Java Swing Snake game built in VS Code.
 
-## Folder Structure
+## Overview
 
-The workspace contains two folders by default, where:
+This project contains a playable Snake game with a classic grid-based board, keyboard controls, food collection, collision detection, and a game-over reset flow.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Project Structure
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- `src/main/java/com/example/snake/App.java` - starts the Swing application
+- `src/main/java/com/example/snake/SnakeGame.java` - main game logic and rendering
+- `bin/` - compiled Java classes
+- `.vscode/` - Java and debugging configuration for VS Code
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Requirements
 
-## Dependency Management
+- Java JDK 17 or newer
+- VS Code with the Java extension pack installed
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Run the Game
+
+From the project root, you can either:
+
+1. Open the project in VS Code and run the `SnakeGame` configuration from Run and Debug.
+2. Or double-click `run.bat` to compile and launch the game.
+
+## Build Manually
+
+```bash
+javac -d bin src/main/java/com/example/snake/*.java
+java -cp bin com.example.snake.App
+```
+
+## Controls
+
+- Arrow keys: move the snake
+- Press arrow keys after game over: restart the round
+
+## Notes
+
+This project was set up as a standard Java project layout to make the code easier to view, build, and debug in VS Code.

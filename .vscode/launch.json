@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SnakeGame",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.example.snake.App",
+      "projectName": "SnakeGame2.0",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
